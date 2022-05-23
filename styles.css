@@ -74,6 +74,7 @@ p{
 }
 
 .top-txt{
+  padding-top: 50px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -131,4 +132,11 @@ p{
 }
 .contact-me{
   margin-top: 100px;
+}
+
+/* Bottom Container */
+
+.bottom-container{
+  width: 100%;
+  background-color: #fafafb;
 }
