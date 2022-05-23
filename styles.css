@@ -36,6 +36,9 @@ p{
 }
 
 /* Navbar */
+.navbar{
+  padding: 0 0 4.5rem;
+}
 
 .navbar-brand{
   font-family: 'Ubuntu';
@@ -66,7 +69,7 @@ p{
   align-items: center;
 }
 .self-img{
-  width: 80%;
+  width: 60%;
   border-radius: 20%;
 }
 
