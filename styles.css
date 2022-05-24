@@ -1,43 +1,43 @@
 
-h1{
-  font-size: 3.5rem;
-  margin: 0;
-  font-family: 'Sacramento', cursive;
-  line-height: 2;
-  font-weight: bold;
-}
-
-h2{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-
-}
-h3{
-  font-family: 'Merriweather', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
 body{
   margin:0;
   text-align: center;
   font-family: 'Merriweather', sans-serif;
-
-
 }
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+}
+
 hr{
   border: dotted grey 6px;
   border-bottom: none;
   width: 10%;
-  margin: auto;
+  margin: 50px auto;
 }
 p{
   line-height: 2;
+  color: #8f8f8f;
+
+}
+
+/* Headings */
+
+.headings{
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+.sub-headings{
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* Navbar */
 .navbar{
-  margin: 0;
   padding: 0 0 4.5rem;
 }
 
@@ -56,9 +56,6 @@ p{
 
 .nav-item{
   padding: 0 18px;
-}
-
-.nav-link{
   font-family: 'Merriweather', sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -69,83 +66,83 @@ p{
 .top-container{
   align-items: center;
 }
+
 .self-img{
   width: 60%;
   border-radius: 20%;
 }
 
 .top-txt{
-  padding-top: 50px;
   justify-content: center;
   display: flex;
   align-items: center;
 }
 
+#top-container h1{
+  padding-top: 50px;
+  font-size: 3.5rem;
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+}
+
 /* Middle Container */
 
 .middle-container{
-  padding: 3% 15%;
-}
-
-.profile{
-  margin: 100px auto;
-
-}
-.profile-row{
-  margin-top: 100px;
-}
-
-
-.skills{
-  margin-top: 100px;
+  position: relative;
   height: 100%;
 }
 
-.skill-row{
-  margin: 100px auto 100px auto;
-  text-align: left;
-  line-height: 2;
-}
-.CRPS-img{
-  width: 25%;
-  text-align: center;
-  float:left;
-  margin-right: 30px;
-}
-.CFOA-img{
-  width: 25%;
-  text-align: center;
-  float:right;
-  margin-left: 30px;
-}
-.CX-img{
-  width: 25%;
-  text-align: center;
-  float:left;
-  margin-right: 30px;
+/* profile */
+
+.profile-row{
+  margin: 100px auto;
 }
 
-.DD-img{
+/* Skills */
+
+.skill-row{
+  padding-bottom: 20%;
+  text-align: left;
+  height: 100%;
+  display: block;
+}
+
+.top-skill{
+  margin: 100px auto 0;
+}
+
+.left-img{
   width: 25%;
-  text-align: center;
+  float:left;
+  margin-right: 30px;
+  max-height: 200px;
+  max-width: 200px;
+}
+.right-img{
+  width: 25%;
   float:right;
   margin-left: 30px;
+  max-height: 200px;
+  max-width: 200px;
 }
-.contact-me{
-  margin: 100px 0;
+
+.bottom-skill{
+  padding-bottom: 10%;
 }
+
+/* CTA */
+
 .btn-dark{
   margin-top: 50px;
 }
 
 /* Bottom Container */
 
-.bottom-container{
-  padding-top: 50px;
+.footer{
+  padding: 50px 0 5%;
   width: 100%;
   background-color: #fafafb;
-  margin-bottom: 0;
-  padding-bottom: 5%;
+  margin: 100px 0 0;
 }
 .footer-link{
   padding-right:1rem;
@@ -155,15 +152,7 @@ p{
   opacity: .5;
 }
 .creator{
-
-  line-height: 2;
   padding-top: 50px;
   opacity: .5;
   clear: both;
-}
-
-@media(max-width: 800px){
-  .container-fluid{
-    padding: 3% 7%;
-  }
 }
