@@ -161,3 +161,9 @@ p{
   opacity: .5;
   clear: both;
 }
+
+@media(max-width: 800px){
+  .container-fluid{
+    padding: 3% 7%;
+  }
+}
