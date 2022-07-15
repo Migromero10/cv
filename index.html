@@ -4,7 +4,7 @@
 <!-- HEAD ----------------------------------------------------------------->
 
 <head>
-  <meta name="viewport" content="width=device-width"/>
+  <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8">
   <title>Miguel Romero</title>
 
@@ -20,129 +20,115 @@
     href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="navbar">
 
-<section id="top-container">
-  <!-- Nav Bar -->
+  <section id="top-container">
+    <!-- Nav Bar -->
+    <div class="container-fluid colored">
 
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <a class="navbar-brand logo" href="index.html">miguel romero</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ms-auto" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects-section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/mromero1097/">LinkedIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactme-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Top Container -->
 
-  <div class="container-fluid">
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html">miguel romero</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/mromero1097/">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Resume.pdf">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:mig.romero10@outlook.com">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-
-    <!-- Top Container -->
-
-    <div class="row top-container">
-      <div class="col-lg-6 top-txt">
-        <img class="self-img" src="home-imgs/self-img.png" alt="self-img">
-      </div>
-      <div class="col-lg-6">
-        <h1>Hi, I'm Miguel</h1>
+      <div class="row top-container">
+        <div class="col-lg-6 self-img-container">
+          <img class="self-img" src="home-imgs/self-img.png" alt="self-img">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="white-background">Hi, I'm Miguel</h1>
+        </div>
       </div>
     </div>
-</section>
 
-</div>
-
+  </section>
 
 
   <!-- MIDDLE CONTAINER SECTION ----------------------------------------------------------------->
 
-<section id="middle-container">
+  <section id="middle-container">
 
-<div class="container-fluid">
-
-  <div class="middle-container">
-    <div class="profile">
-      <h2 class="headings">Hello.</h2>
-        <p class="profile-row">I am a Registered Representative with a passion for video games and fitness. I started learning Software Engineering to create my own video games and apps. </p>
-    </div>
-
-    <hr>
-
-    <div class="skills">
-      <h2 class="headings">My Skills.</h2>
-      <div class="top-skill skill-row">
-        <img class="left-img" src="https://cdn-icons-png.flaticon.com/512/1936/1936153.png" alt="">
-        <h3 class="sub-headings">CRPS™</h3>
-        <p>When I was back in college I joined the investment club and immediately became passionate about investing and personal finance. At my previous role, I learned the ins and outs of the mutual funds industry and specialized in retirement
-          planning. This expanded my knowledge of financial instruments.</p>
-      </div>
-      <div class="skill-row">
-        <img class="right-img" src="https://cdn-icons-png.flaticon.com/512/4592/4592758.png" alt="">
-        <h3 class="sub-headings">CFOA</h3>
-        <p>Last year I started the TrendUp Now program. I further developed my financial knowledge of other asset types. After finishing level 3 of the program, I took and passed the CFOA exam to solidify my experience of futures and options
-          contracts.</p>
-      </div>
-      <div class="skill-row">
-        <img class="left-img" src="https://cdn-icons-png.flaticon.com/512/4149/4149883.png" alt="">
-        <h3 class="sub-headings">Customer Experience</h3>
-        <p>At my current role, I focus on the front ended issues that customers experience. I joined the FinTech world to push myself even further and to liberate my financial knowledge from the financial education processes of the past. Here, I
-          focus in new innovative ways
-          to create better processes.</p>
-      </div>
-      <div class="bottom-skill skill-row">
-        <img class="right-img" src="https://cdn-icons-png.flaticon.com/512/5146/5146533.png" alt="">
-        <h3 class="sub-headings">Design & Development</h3>
-        <p>But now I want to shift my attention to my best skill yet. I believe that expanding my knowledge of software development can help me become a back end engineer that can innovate and revolutionaze customers' lives.</p>
+    <div class="container-fluid">
+      <hr>
+      <div class="profile">
+        <h2 class="headings">About Me</h2>
+        <p class="profile-row txt-box">I am a Registered Representative with a passion for video games and fitness. I started learning Software Engineering to create my own video games and apps. </p>
       </div>
     </div>
 
-    <hr>
-
-    <div class="contact-me">
-      <h2 class="headings">Get In Touch</h2>
-      <h3 class="sub-headings">If you love video games and hiking as much as I do.</h3>
-      <p>Looking to recruit? Let's connect! I'd love to hear about your company!</p>
-      <a href="mailto:mig.romero10@outlook.com" class="btn btn-lg btn-dark" role="button">Contact Me</a>
+    <div class="container-fluid colored">
+      <hr>
+      <h2 class="headings" id="projects-section">Projects</h2>
+      <div class="row txt-box">
+        <div class="projects-card col-lg-6 col-md-6">
+          <div class="card">
+            <img src="home-imgs/tindog-card-img.png" class="card-img-top" alt="tindog-card-img">
+            <div class="card-body">
+              <h5 class="card-title">tindog</h5>
+              <p class="card-text">Develop HTML, CSS and Bootstrap mastery by developing a copycat website of Tinder.</p>
+              <a href="projects/tindog/tindog.html" class="btn btn-outline-dark">Go to tindog</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects-card col-lg-6 col-md-6">
+          <div class="card">
+            <img src="home-imgs/Drum-Kit-Card-img.png" class="card-img-top" alt="Drum-Kit-Card-img.png">
+            <div class="card-body">
+              <h5 class="card-title">Drum Kit</h5>
+              <p class="card-text">Developed JavaScript mastery by developing my own website to play different instruments</p>
+              <a href="projects/Drum-Kit/Drum-Kit.html" class="btn btn-outline-dark">Go to Drum Kit</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <div class="container-fluid">
+      <hr>
 
-</div>
+      <div class="contact-me" id="contactme-section">
+        <h2 class="headings">Get In Touch</h2>
+        <h3 class="sub-headings txt-box">If you love video games and hiking as much as I do.</h3>
+        <p>Looking to recruit? Let's connect! I'd love to hear about your company!</p>
+        <a href="mailto:mig.romero10@outlook.com" class="btn btn-lg btn-dark" role="button">Contact Me</a>
+      </div>
+
+    </div>
 
 
-</section>
 
-
-
-
+  </section>
 
   <!-- BOTTOM CONTAINER SECTION ----------------------------------------------------------------->
-<section id="footer">
+  <section id="footer">
 
+    <div class="footer colored">
+      <a class="footer-link" href="projects.html">Projects</a>
+      <a class="footer-link" href="https://www.linkedin.com/in/mromero1097/">LinkedIn</a>
+      <a class="footer-link" href="Resume.pdf">Resume</a>
+      <p class="creator">© Miguel Romero.</p>
+    </div>
 
-
-  <div class="footer">
-    <a class="footer-link" href="projects.html">Projects</a>
-    <a class="footer-link" href="https://www.linkedin.com/in/mromero1097/">LinkedIn</a>
-    <a class="footer-link" href="Resume.pdf">Resume</a>
-    <p class="creator">© Miguel Romero.</p>
-  </div>
-
-</section>
+  </section>
 
 </body>
 

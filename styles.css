@@ -3,6 +3,7 @@ body{
   margin:0;
   text-align: center;
   font-family: 'Merriweather', sans-serif;
+
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -19,7 +20,18 @@ hr{
 p{
   line-height: 2;
   color: #8f8f8f;
+}
 
+h3.txt-box{
+  margin: 50px auto 25px;
+}
+
+.txt-box{
+  margin: 100px auto;
+}
+
+.colored{
+  background-color: #fafafb;
 }
 
 /* Headings */
@@ -41,7 +53,7 @@ p{
   padding: 0 0 4.5rem;
 }
 
-.navbar-brand{
+.logo{
   font-family: 'Ubuntu';
   font-size: 1.5rem;
 }
@@ -52,6 +64,10 @@ p{
 
 .container-fluid{
   padding: 3% 15%;
+}
+
+#top-container .container-fluid{
+  padding: 3% 15% 0;
 }
 
 .nav-item{
@@ -67,15 +83,16 @@ p{
   align-items: center;
 }
 
-.self-img{
-  width: 60%;
-  border-radius: 20%;
+.self-img-container{
+  padding-top: 10%;
+  height: 100%;
 }
 
-.top-txt{
+.self-img{
   justify-content: center;
   display: flex;
-  align-items: center;
+  width: 60%;
+  left: 0;
 }
 
 #top-container h1{
@@ -87,16 +104,14 @@ p{
 
 /* Middle Container */
 
-.middle-container{
-  position: relative;
+.row{
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* profile */
 
-.profile-row{
-  margin: 100px auto;
-}
 
 /* Skills */
 
@@ -126,9 +141,7 @@ p{
   max-width: 200px;
 }
 
-.bottom-skill{
-  padding-bottom: 10%;
-}
+
 
 /* CTA */
 
@@ -141,7 +154,6 @@ p{
 .footer{
   padding: 50px 0 5%;
   width: 100%;
-  background-color: #fafafb;
   margin: 100px 0 0;
 }
 .footer-link{
@@ -158,12 +170,20 @@ p{
 }
 
 /* Projects */
-#middle{
-  text-align: center;
+.projects-card{
+  margin: 3% 0;
+  max-width: 350px;
+}
+.card{
+  height: 100%;
 }
 
-.card{
- padding: 3% 15%;
- margin: 3%;
- height: 100%;
+@media (max-width: 991px){
+  .self-img{
+    padding-top: 0;
+    display:block;
+    margin: auto;
+    border-radius: 50%
+
+  }
 }
